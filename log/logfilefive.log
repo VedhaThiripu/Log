@@ -1,0 +1,106 @@
+May 23 13:12:57 ccaserver polkitd[660]: Registered Authentication Agent for unix-process:29117:724843947
+(system bus name :1.125269 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 23 13:12:57 ccaserver polkitd[660]: Unregistered Authentication Agent for unix-process:29117:724843947
+(system bus name :1.125269, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+(disconnected from bus)
+May 23 13:13:45 ccaserver polkitd[660]: Registered Authentication Agent for unix-process:29232:724848797
+(system bus name :1.125270 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 23 13:13:45 ccaserver polkitd[660]: Unregistered Authentication Agent for unix-process:29232:724848797
+(system bus name :1.125270, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+(disconnected from bus)
+May 23 13:15:01 ccaserver polkitd[660]: Registered Authentication Agent for unix-process:29329:724856410
+(system bus name :1.125271 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 23 13:16:31 ccaserver polkitd[660]: Unregistered Authentication Agent for unix-process:29329:724856410
+(system bus name :1.125271, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+(disconnected from bus)
+May 23 13:18:44 ccaserver sudo: pam_unix(sudo-i:session): session closed for user root
+May 23 13:18:49 ccaserver sudo: test : TTY=pts/1 ; PWD=/home/test ; USER=root ; COMMAND=/bin/bash
+May 23 13:18:49 ccaserver sudo: pam_unix(sudo-i:session): session opened for user root by test(uid=0)
+May 23 13:19:51 ccaserver polkitd[660]: Registered Authentication Agent for unix-process:29662:724885445
+(system bus name :1.125273 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 23 13:19:51 ccaserver polkitd[660]: Unregistered Authentication Agent for unix-process:29662:724885445
+(system bus name :1.125273, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+(disconnected from bus)
+May 23 13:31:44 ccaserver polkitd[660]: Registered Authentication Agent for unix-process:30520:724956751
+(system bus name :1.125294 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 23 13:33:15 ccaserver polkitd[660]: Unregistered Authentication Agent for unix-process:30520:724956751
+(system bus name :1.125294, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+(disconnected from bus)
+May 23 16:30:11 ccaserver polkitd[660]: Registered Authentication Agent for unix-process:9852:726027437
+(system bus name :1.125479 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 23 16:30:25 ccaserver polkitd[660]: Unregistered Authentication Agent for unix-process:9852:726027437
+(system bus name :1.125479, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+(disconnected from bus)
+May 23 16:30:40 ccaserver polkitd[660]: Registered Authentication Agent for unix-process:9932:726030293
+(system bus name :1.125482 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+
+May 23 16:30:40 ccaserver polkitd[660]: Unregistered Authentication Agent for unix-process:9932:726030293
+(system bus name :1.125482, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+(disconnected from bus)
+May 23 16:31:10 ccaserver polkitd[660]: Registered Authentication Agent for unix-process:10180:726033309
+(system bus name :1.125484 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 23 16:31:10 ccaserver polkitd[660]: Unregistered Authentication Agent for unix-process:10180:726033309
+(system bus name :1.125484, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+(disconnected from bus)
+May 23 16:32:24 ccaserver polkitd[660]: Registered Authentication Agent for unix-process:10330:726040675
+(system bus name :1.125485 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 24 04:38:30 ccaserver polkitd[643]: Loading rules from directory /etc/polkit-1/rules.d
+May 24 04:38:30 ccaserver polkitd[643]: Loading rules from directory /usr/share/polkit-1/rules.d
+May 24 04:38:30 ccaserver polkitd[643]: Finished loading, compiling and executing 2 rules
+May 24 04:38:30 ccaserver polkitd[643]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+May 24 04:38:37 ccaserver sshd[1378]: Server listening on 0.0.0.0 port 22.
+May 24 04:38:37 ccaserver sshd[1378]: Server listening on :: port 22.
+May 24 04:42:54 ccaserver sshd[2619]: Accepted password for test from 10.19.1.52 port 50341 ssh2
+May 24 04:42:54 ccaserver sshd[2619]: pam_unix(sshd:session): session opened for user test by (uid=0)
+May 24 04:43:36 ccaserver sudo: test : TTY=pts/0 ; PWD=/home/test ; USER=root ; COMMAND=/bin/bash
+May 24 04:43:36 ccaserver sudo: pam_unix(sudo-i:session): session opened for user root by test(uid=0)
+May 24 05:08:54 ccaserver sudo: test : TTY=pts/1 ; PWD=/home/test ; USER=root ; COMMAND=/bin/bash
+May 24 05:08:54 ccaserver sudo: pam_unix(sudo-i:session): session opened for user root by test(uid=0)
+May 24 05:19:05 ccaserver polkitd[643]: Registered Authentication Agent for unix-process:5011:245233 (system
+bus name :1.61 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 24 05:19:05 ccaserver polkitd[643]: Unregistered Authentication Agent for unix-process:5011:245233
+(system bus name :1.61, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+(disconnected from bus)
+May 24 05:19:10 ccaserver polkitd[643]: Registered Authentication Agent for unix-process:5020:245704 (system
+bus name :1.62 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 24 05:19:10 ccaserver polkitd[643]: Unregistered Authentication Agent for unix-process:5020:245704
+(system bus name :1.62, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+(disconnected from bus)
+May 24 05:19:20 ccaserver polkitd[643]: Registered Authentication Agent for unix-process:5034:246662 (system
+bus name :1.63 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 24 05:19:20 ccaserver polkitd[643]: Unregistered Authentication Agent for unix-process:5034:246662
+(system bus name :1.63, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+(disconnected from bus)
+
+May 24 05:19:25 ccaserver polkitd[643]: Registered Authentication Agent for unix-process:5055:247234 (system
+bus name :1.64 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 24 05:19:25 ccaserver polkitd[643]: Unregistered Authentication Agent for unix-process:5055:247234
+(system bus name :1.64, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+(disconnected from bus)
+May 24 14:28:16 ccaserver polkitd[643]: Registered Authentication Agent for unix-process:19942:1551894
+(system bus name :1.281 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path
+/org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+May 24 14:28:17 ccaserver polkitd[643]: Unregistered Authentication Agent for unix-process:19942:1551894
+(system bus name :1.281, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+(disconnected from bus)
+Jun 27 10:18:32 ccaserver sshd[27163]: Accepted password for root from 10.28.200.96 port
+41372 ssh2
+Jun 27 10:18:32 ccaserver sshd[27163]: pam_unix(sshd:session): session opened for user root by
+(uid=0)
+Jun 27 10:18:33 ccaserver sshd[27163]: Received disconnect from 10.28.200.96 port 41372:11:
+disconnected by user
+Jun 27 10:18:33 ccaserver sshd[27163]: Disconnected from 10.28.200.96 port 41372
+Jun 27 10:18:33 ccaserver sshd[27163]: pam_unix(sshd:session): session closed for user root

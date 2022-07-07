@@ -1,0 +1,149 @@
+2022-01-16 00:04:31,171 INFO [org.cesecore.certificates.certificate.CertificateStoreSessionBean] (EJB default -
+10) Reloading CA certificate cache.
+2022-01-16 00:04:31,178 DEBUG [org.cesecore.certificates.ca.internal.CaCertificateCache] (EJB default - 10)
+Loaded 4 ca certificates
+2022-01-16 00:04:31,178 DEBUG [org.cesecore.certificates.certificate.HashID] (EJB default - 10) The certificate
+with subject DN &#39;C=SE,O=Example CA,CN
+=ManagementCA&#39; can be fetched with &#39;search.cgi?sKIDHash=laHvgr1ODz6CA5G0IGTibEYbHeM&#39; from the VA.
+2022-01-16 00:04:31,178 DEBUG [org.cesecore.certificates.certificate.HashID] (EJB default - 10) The DN
+&#39;C=SE,O=Example CA,CN=ManagementCA&#39; is identif
+ied by the Hash string &#39;P6x44LeNm8oD1fZwDSqxw6F2m4g&#39; when accessing the VA.
+2022-01-16 00:04:31,178 DEBUG [org.cesecore.certificates.certificate.HashID] (EJB default - 10) The DN
+&#39;C=SE,O=Example CA,CN=ManagementCA&#39; is identif
+ied by the Hash string &#39;P6x44LeNm8oD1fZwDSqxw6F2m4g&#39; when accessing the VA.
+2022-01-16 00:04:31,178 DEBUG [org.cesecore.certificates.certificate.HashID] (EJB default - 10) The certificate
+with subject DN &#39;C=IN,ST=TN,L=KALPAKKAM,O=IGCAR,CN=self-signedca&#39; can be fetched with
+&#39;search.cgi?sKIDHash=HC3Adihk0cB+hBhKVJ5MkvmV3Cc&#39; from the VA.
+2022-01-16 00:04:31,178 DEBUG [org.cesecore.certificates.certificate.HashID] (EJB default - 10) The DN
+&#39;C=IN,ST=TN,L=KALPAKKAM,O=IGCAR,CN=self-signed
+ca&#39; is identified by the Hash string &#39;6auB91hktQiVto1dj0/Wg7Cz1pA&#39; when accessing the VA.
+2022-01-16 00:04:31,178 DEBUG [org.cesecore.certificates.certificate.HashID] (EJB default - 10) The DN
+&#39;C=IN,ST=TN,L=KALPAKKAM,O=IGCAR,CN=self-signed
+ca&#39; is identified by the Hash string &#39;6auB91hktQiVto1dj0/Wg7Cz1pA&#39; when accessing the VA.
+2022-01-16 00:04:31,179 DEBUG [org.cesecore.certificates.certificate.HashID] (EJB default - 10) The certificate
+with subject DN &#39;C=IN,ST=TN,L=KALPAKK
+AM,O=IGCAR,CN=self-signedCA&#39; can be fetched with &#39;search.cgi?sKIDHash=HC3Adihk0cB+hBhKVJ5MkvmV3Cc&#39;
+from the VA.
+2022-01-16 00:04:31,179 DEBUG [org.cesecore.certificates.certificate.HashID] (EJB default - 10) The DN
+&#39;C=IN,ST=TN,L=KALPAKKAM,O=IGCAR,CN=self-signed
+CA&#39; is identified by the Hash string &#39;s7rDYYxjBxNmoMEbKrvi2Ed54Xg&#39; when accessing the VA.
+2022-01-16 00:04:31,179 DEBUG [org.cesecore.certificates.certificate.HashID] (EJB default - 10) The DN
+&#39;C=IN,ST=TN,L=KALPAKKAM,O=IGCAR,CN=self-signed
+CA&#39; is identified by the Hash string &#39;s7rDYYxjBxNmoMEbKrvi2Ed54Xg&#39; when accessing the VA.
+2022-01-16 00:04:31,179 DEBUG [org.cesecore.certificates.certificate.HashID] (EJB default - 10) The certificate
+with subject DN &#39;C=IN,ST=TN,L=KALPAKKAM,O=IGCAR,CN=test-subca&#39; can be fetched with
+&#39;search.cgi?sKIDHash=GI31IUDoPVGhBUHFTKwLfZ3os/w&#39; from the VA.
+2022-01-16 00:04:31,179 DEBUG [org.cesecore.certificates.certificate.HashID] (EJB default - 10) The DN
+&#39;C=IN,ST=TN,L=KALPAKKAM,O=IGCAR,CN=test-subca&#39;
+is identified by the Hash string &#39;ZOvadAAZjsoUxtjwgt1CGx9JJsA&#39; when accessing the VA.
+2022-01-16 00:04:31,179 DEBUG [org.cesecore.certificates.certificate.HashID] (EJB default - 10) The DN
+&#39;C=IN,ST=TN,L=KALPAKKAM,O=IGCAR,CN=self-signed
+CA&#39; is identified by the Hash string &#39;s7rDYYxjBxNmoMEbKrvi2Ed54Xg&#39; when accessing the VA.
+2022-01-16 00:04:31,179 DEBUG [org.cesecore.certificates.ca.internal.CaCertificateCache] (EJB default - 10)
+Found the following CA certificates :
+CN=self-signedca,O=IGCAR,L=KALPAKKAM,ST=TN,C=IN,58402C5007B4
+CN=test-subca,O=IGCAR,L=KALPAKKAM,ST=TN,C=IN,7E3FC319E68E
+CN=ManagementCA,O=Example CA,C=SE,3113FF52D1C675C6ADCDB444E2D954CD5A190E8E
+2022-01-16 00:04:31,180 INFO [org.cesecore.certificates.certificate.CertificateStoreSessionBean] (EJB default -
+10) Reloaded CA certificate cache with 4 certificates
+2022-01-16 00:04:51,637 DEBUG [org.cesecore.certificates.ocsp.OcspResponseGeneratorSessionBean] (EJB
+default - 3) Class se.primeKey.caToken.card.CardKeysImpl could not be loaded.
+2022-01-16 00:04:51,638 DEBUG [org.cesecore.configuration.GlobalConfigurationSessionBean] (EJB default - 3)
+Reading Configuration: OCSP
+2022-01-16 00:04:51,639 DEBUG [org.cesecore.configuration.GlobalConfigurationSessionBean] (EJB default - 3)
+No default GlobalConfiguration exists. Creating a new one.
+2022-01-16 00:04:51,639 DEBUG [org.cesecore.certificates.ca.internal.CaIDCacheBean] (EJB default - 3) Loading
+CA ID cache from database
+2022-01-16 00:04:51,639 DEBUG [org.cesecore.certificates.ca.CaSessionBean] (EJB default - 3) CA with ID
+1812405533 will be checked for updates.
+2022-01-16 00:04:51,645 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) implementation classname for
+extended service type: 3 is org.ejbca.core.model.ca.caadmin.extendedcaservices.CmsCAService
+2022-01-16 00:04:51,646 DEBUG [org.ejbca.core.model.ca.caadmin.extendedcaservices.CmsCAService] (EJB
+default - 3) KEYSTORE is null when creating CmsCAService
+2022-01-16 00:04:51,646 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) implementation classname for
+extended service type: 4 is org.ejbca.core.model.ca.caadmin.extendedcaservices.HardTokenEncryptCAService
+2022-01-16 00:04:51,646 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) implementation classname for
+extended service type: 5 is org.ejbca.core.model.ca.caadmin.extendedcaservices.KeyRecoveryCAService
+2022-01-16 00:04:51,646 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) Adding CA certificate from
+CERTIFICATECHAIN to certificatechain:
+2022-01-16 00:04:51,646 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) Cert subjectDN:
+CN=ManagementCA,O=Example CA,C=SE
+2022-01-16 00:04:51,646 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) Cert issuerDN:
+CN=ManagementCA,O=Example CA,C=SE
+2022-01-16 00:04:51,646 DEBUG [org.cesecore.config.CesecoreConfiguration] (EJB default - 3) Using default
+value of 20 for new CA&#39;s ca.serialnumberoctetsize
+2022-01-16 00:04:51,646 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) CA certificate chain is 1 levels
+deep.
+2022-01-16 00:04:51,646 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) CA-cert subjectDN:
+CN=ManagementCA,O=Example CA,C=SE
+2022-01-16 00:04:51,646 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) CA-cert issuerDN:
+CN=ManagementCA,O=Example CA,C=SE
+2022-01-16 00:04:51,646 DEBUG [org.cesecore.certificates.ca.CAData] (EJB default - 3) CAData.getProtectString
+gives size: 9216
+2022-01-16 00:04:51,649 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) implementation classname for
+extended service type: 3 is org.ejbca.core.model.ca.caadmin.extendedcaservices.CmsCAService
+2022-01-16 00:04:51,649 DEBUG [org.ejbca.core.model.ca.caadmin.extendedcaservices.CmsCAService] (EJB
+default - 3) KEYSTORE is null when creating CmsCAService
+2022-01-16 00:04:51,649 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) implementation classname for
+extended service type: 4 is org.ejbca.core.model.ca.caadmin.extendedcaservices.HardTokenEncryptCAService
+2022-01-16 00:04:51,649 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) implementation classname for
+extended service type: 5 is org.ejbca.core.model.ca.caadmin.extendedcaservices.KeyRecoveryCAService
+2022-01-16 00:04:51,649 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) Adding CA certificate from
+CERTIFICATECHAIN to certificatechain:
+2022-01-16 00:04:51,649 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) Cert subjectDN:
+CN=ManagementCA,O=Example CA,C=SE
+2022-01-16 00:04:51,649 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) Cert issuerDN:
+CN=ManagementCA,O=Example CA,C=SE
+2022-01-16 00:04:51,649 DEBUG [org.cesecore.config.CesecoreConfiguration] (EJB default - 3) Using default
+value of 20 for new CA&#39;s ca.serialnumberoctetsize
+2022-01-16 00:04:51,649 DEBUG [org.cesecore.internal.CommonCacheBase] (EJB default - 3) Update not needed
+X509CA in cache. Digest was 1418232191, cacheEntry digest was 1418232191
+2022-01-16 00:04:51,649 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) CA certificate chain is 1 levels
+deep.
+2022-01-16 00:04:51,649 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) CA-cert subjectDN:
+CN=ManagementCA,O=Example CA,C=SE
+2022-01-16 00:04:51,649 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) CA-cert issuerDN:
+CN=ManagementCA,O=Example CA,C=SE
+2022-01-16 00:04:51,649 DEBUG [org.cesecore.certificates.ocsp.OcspResponseGeneratorSessionBean] (EJB
+default - 3) Processing X509 CA ManagementCA (1812405533).
+2022-01-16 00:04:51,649 DEBUG [org.cesecore.keys.token.CryptoTokenSessionBean] (EJB default - 3)
+CryptoToken with ID -853989967 will be checked for updates.
+2022-01-16 00:04:51,650 DEBUG [org.cesecore.internal.CommonCacheBase] (EJB default - 3) Update not needed
+SoftCryptoToken in cache. Digest was 1245931725, cacheEntry digest was 1245931725
+2022-01-16 00:04:51,652 DEBUG [org.cesecore.certificates.ocsp.cache.OcspSigningCacheEntry] (EJB default - 3)
+Include signing cert: true
+2022-01-16 00:04:51,652 DEBUG [org.cesecore.certificates.ocsp.cache.OcspSigningCacheEntry] (EJB default - 3)
+Include chain: true
+2022-01-16 00:04:51,652 DEBUG [org.cesecore.certificates.ocsp.cache.OcspSigningCache] (EJB default - 3) Using
+getIssuerNameHash 3fac78e0b78d9bca03d5f6700d2ab1c3a1769b88 and getIssuerKeyHash -
+6a5e107d42b1f0c17dfc6e4bdf9b1d93b9e4e21d to produce id -199444860
+2022-01-16 00:04:51,652 DEBUG [org.cesecore.certificates.ocsp.cache.OcspSigningCache] (EJB default - 3) Using
+getIssuerNameHash -340f76357389596e248c1d045880d58c4fdfcc41ae36ccd40b9378546896d5f2 and
+getIssuerKeyHash 1fb21ea97acc5722994813113ff9a7ba2754f81fcedad804cf015cac1a686422 to produce id -
+1390841005
+2022-01-16 00:04:51,652 DEBUG [org.cesecore.util.CertTools] (EJB default - 3) Time for &quot;certificate will soon
+expire&quot; not yet reached. You will be warned after: Fri Feb 15 09:55:49 IST 2030
+2022-01-16 00:04:51,652 DEBUG [org.cesecore.certificates.ca.CaSessionBean] (EJB default - 3) CA with ID -
+1470492410 will be checked for updates.
+2022-01-16 00:04:51,656 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) implementation classname for
+extended service type: 3 is org.ejbca.core.model.ca.caadmin.extendedcaservices.CmsCAService
+2022-01-16 00:04:51,656 DEBUG [org.ejbca.core.model.ca.caadmin.extendedcaservices.CmsCAService] (EJB
+default - 3) KEYSTORE is null when creating CmsCAService
+2022-01-16 00:04:51,656 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) implementation classname for
+extended service type: 4 is org.ejbca.core.model.ca.caadmin.extendedcaservices.HardTokenEncryptCAService
+2022-01-16 00:04:51,656 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) implementation classname for
+extended service type: 5 is org.ejbca.core.model.ca.caadmin.extendedcaservices.KeyRecoveryCAService
+2022-01-16 00:04:51,656 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) Adding CA certificate from
+CERTIFICATECHAIN to certificatechain:
+2022-01-16 00:04:51,656 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) Cert subjectDN: CN=self-
+signedCA,O=IGCAR,L=KALPAKKAM,ST=TN,C=IN
+2022-01-16 00:04:51,656 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) Cert issuerDN: CN=self-
+signedCA,O=IGCAR,L=KALPAKKAM,ST=TN,C=IN
+2022-01-16 00:04:51,656 DEBUG [org.cesecore.config.CesecoreConfiguration] (EJB default - 3) Using default
+value of 20 for new CA&#39;s ca.serialnumberoctetsize
+2022-01-16 00:04:51,656 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) CA certificate chain is 1 levels
+deep.
+2022-01-16 00:04:51,657 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) CA-cert subjectDN: CN=self-
+signedCA,O=IGCAR,L=KALPAKKAM,ST=TN,C=IN
+2022-01-16 00:04:51,657 DEBUG [org.cesecore.certificates.ca.CA] (EJB default - 3) CA-cert issuerDN: CN=self-
+signedCA,O=IGCAR,L=KALPAKKAM,ST=TN,C=IN

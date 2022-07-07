@@ -1,0 +1,47 @@
+Apr 17 01:49:19 nethsm hardserver[1515]: 2022-04-17 01:49:19 tf0d6b4a5: nFast Server: Notice: Fast-path optimization for AES/CBC enabled.
+Apr 17 01:49:19 nethsm hardserver[1515]: 2022-04-17 01:49:19 tf0d6b4a5: nFast Server: Notice: Fast-path
+optimization for HMAC/SHA256 enabled.
+Apr 17 01:49:23 nethsm hardserver[1515]: 2022-04-17 01:49:23 tf0d6b4a5: nFast Server: Remote server error:
+NST Ni584246 shutting down whilst expecting a SetupBegin message: (InvalidModule)
+Apr 17 01:49:25 nethsm hardserver[1515]: 2022-04-17 01:49:25 tf0d6b4a5: nFast Server: Notice: freeing NST
+Ni584246 with error InvalidModule
+Apr 17 01:49:25 nethsm hardserver[1515]: 2022-04-17 01:49:25 tf0d6b4a5: nFast Server: Notice: RemoteSource
+Rs584246 closing with error (RemoteServerFailed, &lt;us&gt; (InvalidModule))
+Apr 17 01:49:37 nethsm hardserver[1515]: 2022-04-17 01:49:37 tf0d6b4a5: nFast Server: Remote server error:
+NST Ni584247 shutting down whilst expecting a SetupBegin message: (InvalidModule)
+Apr 17 01:49:39 nethsm hardserver[1515]: 2022-04-17 01:49:39 tf0d6b4a5: nFast Server: Notice: freeing NST
+Ni584247 with error InvalidModule
+Apr 17 01:49:39 nethsm hardserver[1515]: 2022-04-17 01:49:39 tf0d6b4a5: nFast Server: Notice: RemoteSource
+Rs584247 closing with error (RemoteServerFailed, &lt;us&gt; (InvalidModule))
+Apr 17 01:49:51 nethsm hardserver[1515]: 2022-04-17 01:49:51 tf0d6b4a5: nFast Server: Remote server error:
+NST Ni584248 shutting down whilst expecting a SetupBegin message: (InvalidModule)
+Apr 17 01:49:53 nethsm hardserver[1515]: 2022-04-17 01:49:53 tf0d6b4a5: nFast Server: Notice: freeing NST
+Ni584248 with error InvalidModule
+Apr 17 01:49:53 nethsm hardserver[1515]: 2022-04-17 01:49:53 tf0d6b4a5: nFast Server: Notice: RemoteSource
+Rs584248 closing with error (RemoteServerFailed, &lt;us&gt; (InvalidModule))
+Apr 17 01:50:05 nethsm hardserver[1515]: 2022-04-17 01:50:05 tf0d6b4a5: nFast Server: Remote server error:
+NST Ni584249 shutting down whilst expecting a SetupBegin message: (InvalidModule)
+Apr 17 01:50:07 nethsm hardserver[1515]: 2022-04-17 01:50:07 tf0d6b4a5: nFast Server: Notice: freeing NST
+Ni584249 with error InvalidModule
+Apr 17 01:50:07 nethsm hardserver[1515]: 2022-04-17 01:50:07 tf0d6b4a5: nFast Server: Notice: RemoteSource
+Rs584249 closing with error (RemoteServerFailed, &lt;us&gt; (InvalidModule))
+Apr 17 01:50:19 nethsm hardserver[1515]: 2022-04-17 01:50:19 tf0d6b4a5: nFast Server: Remote server error:
+NST Ni584250 shutting down whilst expecting a SetupBegin message: (InvalidModule)
+Apr 17 01:50:19 nethsm hardserver[1515]: 2022-04-17 01:50:19 tf0d6b4a5: nFast Server: Notice: CreateClient
+(v1) pid: 2545, process name: /opt/nfast/bin/nfcp
+Apr 17 01:50:19 nethsm hardserver[1515]: 2022-04-17 01:50:19 tf0d6b4a5: nFast Server: Notice: Fast-path
+optimization for AES/CBC enabled.
+Apr 17 01:50:19 nethsm hardserver[1515]: 2022-04-17 01:50:19 tf0d6b4a5: nFast Server: Notice: Fast-path
+optimization for HMAC/SHA256 enabled.
+Apr 17 01:50:19 nethsm hardserver[1515]: 2022-04-17 01:50:19 tf0d6b4a5: nFast Server: Notice: Fast-path
+optimization for AES/CBC enabled.
+Apr 17 01:50:19 nethsm hardserver[1515]: 2022-04-17 01:50:19 tf0d6b4a5: nFast Server: Notice: Fast-path
+optimization for HMAC/SHA256 enabled.
+Apr 17 01:50:19 nethsm hardserver[1515]: 2022-04-17 01:50:19 tf0d6b4a5: nFast Server: Notice: CreateClient
+(v1) pid: 2546, process name: /opt/nfast/bin/nfcp
+Apr 17 01:50:19 nethsm hardserver[1515]: 2022-04-17 01:50:19 tf0d6b4a5: nFast Server: Notice: Fast-path
+optimization for AES/CBC enabled.
+Apr 17 01:50:19 nethsm hardserver[1515]: 2022-04-17 01:50:19 tf0d6b4a5: nFast Server: Notice: Fast-path
+optimization for HMAC/SHA256 enabled.
+Apr 17 01:50:19 nethsm hardserver[1515]: 2022-04-17 01:50:19 tf0d6b4a5: nFast Server: Notice: Fast-path
+optimization for AES/CBC enabled.

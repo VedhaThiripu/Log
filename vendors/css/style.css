@@ -1,0 +1,14 @@
+body{
+    font-family: arial;
+}
+.toast-warning {
+    background-color: #ad6602;
+  }
+
+  .toast-error {
+    background-color: #f80505;
+  }
+  .toast {
+    margin-top: 200px;
+    position: fixed;
+  }

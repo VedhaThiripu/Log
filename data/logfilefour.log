@@ -1,0 +1,313 @@
+Apr 17 00:01:01 igcarca rsyslogd: [origin software=&quot;rsyslogd&quot; swVersion=&quot;8.24.0&quot; x-pid=&quot;2018&quot; x-
+info=&quot;http://www.rsyslog.com&quot;] rsyslogd was HUPed
+Apr 17 00:01:02 igcarca logrotate: ALERT exited abnormally with [1]
+Apr 17 00:01:02 igcarca systemd: Removed slice User Slice of root.
+Apr 17 00:01:02 igcarca systemd: Stopping User Slice of root.
+Apr 17 00:01:02 igcarca dbus[1022]: [system] Successfully activated service &#39;org.fedoraproject.Setroubleshootd&#39;
+Apr 17 00:01:02 igcarca setroubleshoot: failed to retrieve rpm info for /var/lib/mysql/igcarca.log
+Apr 17 00:01:03 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from getattr access on the file
+/var/lib/mysql/igcarca.log. For complete SELinux messages run: sealert -l 983eac16-7b08-4612-aabe-
+e320ab2f7aeb
+Apr 17 00:01:03 igcarca python: SELinux is preventing /usr/sbin/logrotate from getattr access on the file
+/var/lib/mysql/igcarca.log.#012#012***** Plugin catchall (100. confidence) suggests
+**************************#012#012If you believe that logrotate should be allowed getattr access on the i
+gcarca.log file by default.#012Then you should report this as a bug.#012You can generate a local policy module to
+allow this access.#012Do#012allow this access for now by executing:#012# ausearch -c &#39;logrotate&#39; --raw |
+audit2allow -M my-logrotate#012# semodule -i my-logrotate.pp#012
+Apr 17 00:01:03 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from getattr access on the file
+/var/ossec/logs/ossec.log. For complete SELinux messages run: sealert -l e71aa98f-5ac3-4b2e-a35c-
+be6adcf25750
+Apr 17 00:01:03 igcarca python: SELinux is preventing /usr/sbin/logrotate from getattr access on the file
+/var/ossec/logs/ossec.log.#012#012***** Plugin catchall_labels (83.8 confidence) suggests
+*******************#012#012If you want to allow logrotate to have getattr access on the ossec.log
+file#012Then you need to change the label on /var/ossec/logs/ossec.log#012Do#012# semanage fcontext -a -t
+FILE_TYPE &#39;/var/ossec/logs/ossec.log&#39;#012where FILE_TYPE is one of the following: NetworkManager_exec_t,
+NetworkManager_initrc_exec_t, NetworkManager_log_t, NetworkManager_tmp_t,
+NetworkManager_unit_file_t, NetworkManager_var_run_t, abrt_dump_oops_exec_t, abrt_exec_t,
+abrt_handle_event_exec_t, abrt_helper_exec_t, abrt_initrc_exec_t, abrt_retrace_coredump_exec_t,
+abrt_retrace_worker_exec_t, abrt_tmp_t, abrt_unit_file_t, abrt_upload_watch_exec_t,
+abrt_upload_watch_tmp_t, abrt_var_cache_t, abrt_var_log_t, abrt_var_run_t, abrt_watch_log_exec_t,
+accountsd_exec_t, accountsd_unit_file_t, acct_data_t, acct_exec_t, acct_initrc_exec_t, admin_crontab_tmp_t,
+admin_passwd_exec_t, afs_bosserver_exec_t, afs_exec_t, afs_fsserver_exec_t, afs_initrc_exec_t,
+afs_kaserver_exec_t, afs_logfile_t, afs_ptserver_exec_t, afs_vlserver_exec_t, aiccu_exec_t, aiccu_initrc_exec_t,
+aiccu_var_run_t, aide_exec_t, aide_log_t, ajaxterm_exec_t, ajaxterm_initrc_exec_t, ajaxterm_var_run_t,
+alsa_exec_t, alsa_tmp_t, alsa_unit_file_t, alsa_var_run_t, amanda_exec_t, amanda_inetd_exec_t, amanda_log_t,
+amanda_recover_exec_t, amanda_tmp_t, amanda_unit_file_t, amtu_exec_t, amtu_initrc_exec_t,
+anaconda_exec_t, anacron_exec_t, anon_inodefs_t, antivirus_exec_t, antivirus_initrc_exec_t, antivirus_log_t,
+antivirus_tmp_t, antivirus_unit_file_t, antivirus_var_run_t, apcupsd_cgi_script_exec_t, apcupsd_exec_t,
+apcupsd_initrc_exec_t, apcupsd_log_t, apcupsd_tmp_t, apcupsd_unit_file_t, apcupsd_var_run_t, apm_exec_t,
+apmd_exec_t, apmd_initrc_exec_t, apmd_log_t, apmd_tmp_t, apmd_unit_file_t, apmd_var_run_t,
+arpwatch_exec_t, arpwatch_initrc_exec_t, arpwatch_tmp_t, arpwatch_unit_file_t, arpwatch_var_run_t,
+asterisk_exec_t, asterisk_initrc_exec_t, asterisk_log_t, asterisk_tmp_t, asterisk_var_run_t, audisp_exec_t,
+audisp_remote_exec_t, audisp_var_run_t, auditadm_sudo_tmp_t, auditctl_exec_t, auditd_exec_t,
+auditd_initrc_exec_t, auditd_log_t, auditd_unit_file_t, auditd_var_run_t, auth_cache_t,
+authconfig_exec_t,automount_exec_t, automount_initrc_exec_t, automount_tmp_t, automount_unit_file_t,
+automount_var_run_t, avahi_exec_t, avahi_initrc_exec_t, avahi_unit_file_t, avahi_var_run_t, awstats_exec_t,
+awstats_script_exec_t, awstats_tmp_t, acula_admin_exec_t, bacula_exec_t, bacula_initrc_exec_t, bacula_log_t,
+
+bacula_tmp_t, bacula_unconfined_script_exec_t, bacula_var_run_t, bcfg2_exec_t, bcfg2_initrc_exec_t,
+bcfg2_unit_file_t, bcfg2_var_run_t, bin_t, bitlbee_exec_t, bitlbee_initrc_exec_t, bitlbee_log_t, bitlbee_tmp_t,
+bitlbee_var_run_t, blkmapd_exec_t, blkmapd_initrc_exec_t, blkmapd_var_run_t, blktap_exec_t,
+blktap_var_run_t, blueman_exec_t, blueman_var_run_t, bluetooth_exec_t, bluetooth_helper_exec_t,
+bluetooth_helper_tmp_t, bluetooth_helper_tmpfs_t, bluetooth_initrc_exec_t, bluetooth_tmp_t,
+bluetooth_unit_file_t, bluetooth_var_run_t, boinc_exec_t, boinc_initrc_exec_t, boinc_log_t, boinc_pro
+ject_tmp_t, boinc_tmp_t, boinc_unit_file_t, boot_t, bootloader_exec_t, bootloader_tmp_t,
+bootloader_var_run_t, brctl_exec_t, brltty_exec_t, brltty_log_t, brltty_unit_file_t, brltty_var_run_t,
+bugzilla_script_exec_t, bugzilla_tmp_t, bumblebee_exec_t, bumblebee_unit_file_t, bumblebee_var_run_t, cach
+efilesd_exec_t, cachefilesd_var_run_t, calamaris_exec_t, calamaris_log_t, callweaver_exec_t,
+callweaver_initrc_exec_t, callweaver_log_t, callweaver_var_run_t, canna_exec_t, canna_initrc_exec_t,
+canna_log_t, canna_var_run_t, cardctl_exec_t, cardmgr_dev_t, cardmgr_exec_t, cardmgr_var_run_t, ccs_exec
+_t, ccs_initrc_exec_t, ccs_tmp_t, ccs_var_lib_t, ccs_var_log_t, ccs_var_run_t, cdcc_exec_t, cdcc_tmp_t,
+cdrecord_exec_t, cert_t, certmaster_exec_t, certmaster_initrc_exec_t, certmaster_var_log_t,
+certmaster_var_run_t, certmonger_exec_t, certmonger_initrc_exec_t, certmonger_unconfined_exec_t, certm
+onger_unit_file_t, certmonger_var_run_t, certwatch_exec_t, cfengine_execd_exec_t, cfengine_initrc_exec_t,
+cfengine_log_t, cfengine_monitord_exec_t, cfengine_serverd_exec_t, cgclear_exec_t, cgconfig_exec_t,
+cgconfig_initrc_exec_t, cgdcbxd_exec_t, cgdcbxd_unit_file_t, cgdcbxd_var_run_t, cgred_exec_t
+, cgred_initrc_exec_t, cgred_log_t, cgred_var_run_t, cgroup_t, checkpc_exec_t, checkpc_log_t,
+checkpolicy_exec_t, chfn_exec_t, chkpwd_exec_t, chrome_sandbox_exec_t, chrome_sandbox_nacl_exec_t,
+chrome_sandbox_tmp_t, chronyc_exec_t, chronyd_exec_t, chronyd_initrc_exec_t, chronyd_keys_t,
+chronyd_unit_file_t, chronyd_var_log_t, chronyd_var_run_t, chroot_exec_t, cifs_t, cinder_api_exec_t,
+cinder_api_tmp_t, cinder_api_unit_file_t, cinder_backup_exec_t, cinder_backup_tmp_t,
+cinder_backup_unit_file_t, cinder_log_t, cinder_scheduler_exec_t, cinder_scheduler_tmp_t,
+cinder_scheduler_unit_file_t, cinder_var_run_t, cinder_volume_exec_t, cinder_volume_tmp_t,
+cinder_volume_unit_file_t, ciped_exec_t, ciped_initrc_exec_t, clogd_exec_t, clogd_var_run_t,
+cloud_init_exec_t, cloud_init_tmp_t, cloud_init_unit_file_t, cloud_log_t, cluster_exec_t, cluster_initrc_exec_t,
+cluster_tmp_t, cluster_unit_file_t, cluster_var_log_t, cluster_var_run_t, clvmd_exec_t, clvmd_initrc_exec_t,
+clvmd_var_run_t, cmirrord_exec_t, cmirrord_initrc_exec_t, cmirrord_var_run_
+t, cobbler_tmp_t, cobbler_var_log_t, cobblerd_exec_t, cobblerd_initrc_exec_t, cockpit_session_exec_t,
+cockpit_tmp_t, cockpit_unit_file_t, cockpit_var_run_t, cockpit_ws_exec_t, collectd_exec_t,
+collectd_initrc_exec_t, collectd_script_exec_t, collectd_script_tmp_t, collectd_unit_file_t, collectd_var
+_run_t, colord_exec_t, colord_tmp_t, colord_unit_file_t, comsat_exec_t, comsat_tmp_t, comsat_var_run_t,
+condor_collector_exec_t, condor_initrc_exec_t, condor_log_t, condor_master_exec_t, condor_master_tmp_t,
+condor_negotiator_exec_t, condor_procd_exec_t, condor_schedd_exec_t, condor_schedd_tmp_t,
+condor_startd_exec_t, condor_startd_tmp_t, condor_unit_file_t, condor_var_run_t, conman_exec_t,
+conman_log_t, conman_tmp_t, conman_unconfined_script_exec_t, conman_unit_file_t, conman_var_run_t,
+consolehelper_exec_t, consolekit_exec_t, consolekit_log_t, consolekit_unit_file_t, consolekit_var_run_t
+, container_auth_exec_t, container_log_t, container_plugin_var_run_t, container_runtime_exec_t,
+container_runtime_tmp_t, container_unit_file_t, container_var_run_t, couchdb_exec_t, couchdb_initrc_exec_t,
+couchdb_log_t, couchdb_tmp_t, couchdb_unit_file_t, couchdb_var_run_t, courier_authdaemon_exec_
+t, courier_exec_t, courier_pcp_exec_t, courier_pop_exec_t, courier_sqwebmail_exec_t, courier_tcpd_exec_t,
+courier_var_run_t, cpu_online_t, cpucontrol_exec_t, cpufreqselector_exec_t, cpuplug_exec_t,
+cpuplug_initrc_exec_t, cpuplug_var_run_t, cpuspeed_exec_t, cpuspeed_var_run_t, crack_exec_t, crack_t
+
+mp_t, cron_log_t, cron_var_run_t, crond_exec_t, crond_initrc_exec_t, crond_tmp_t, crond_unit_file_t,
+crond_var_run_t, crontab_exec_t, crontab_tmp_t,ctdbd_exec_t, ctdbd_initrc_exec_t, ctdbd_log_t, ctdbd_tmp_t,
+ctdbd_var_run_t, cups_pdf_exec_t, cups_pdf_tmp_t, cupsd_config_exec_t, cupsd_config_var_
+run_t, cupsd_exec_t, cupsd_initrc_exec_t, cupsd_log_t, cupsd_lpd_exec_t, cupsd_lpd_tmp_t,
+cupsd_lpd_var_run_t, cupsd_tmp_t, cupsd_unit_file_t, cupsd_var_run_t, cvs_exec_t, cvs_initrc_exec_t,
+cvs_script_exec_t, cvs_tmp_t, cvs_var_run_t, cyphesis_exec_t, cyphesis_initrc_exec_t, cyphesis_log_t, cyphe
+sis_tmp_t, cyphesis_var_run_t, cyrus_exec_t, cyrus_initrc_exec_t, cyrus_tmp_t, cyrus_var_run_t,
+dbadm_sudo_tmp_t, dbskkd_exec_t, dbskkd_tmp_t, dbskkd_var_run_t, dbusd_etc_t, dbusd_exec_t,
+dcc_client_exec_t, dcc_client_tmp_t, dcc_dbclean_exec_t, dcc_dbclean_tmp_t, dcc_var_run_t, dccd_exec_t,
+dccd_tmp_t, dccd_var_run_t, dccifd_exec_t, dccifd_tmp_t, dccifd_var_run_t, dccm_exec_t, dccm_tmp_t,
+dccm_var_run_t, dcerpcd_exec_t, dcerpcd_var_run_t, ddclient_exec_t, ddclient_initrc_exec_t, ddclient_log_t,
+ddclient_tmp_t, ddclient_v
+Apr 17 00:01:03 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from read access on the
+directory /home/wildfly/add_users/log. Forcomplete SELinux messages run: sealert -l 9977a30c-e70b-400d-b41c-
+b4f5e8a7a5f7
+Apr 17 00:01:03 igcarca python: SELinux is preventing /usr/sbin/logrotate from read access on the directory
+/home/wildfly/add_users/log.#012#012***** Plugin catchall (100. confidence) suggests
+**************************#012#012If you believe that logrotate should be allowed read access on the l
+og directory by default.#012Then you should report this as a bug.#012You can generate a local policy module to
+allow this access.#012Do#012allow this access for now by executing:#012# ausearch -c &#39;logrotate&#39; --raw |
+audit2allow -M my-logrotate#012# semodule -i my-logrotate.pp#012
+Apr 17 00:01:03 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from &#39;read, write&#39; accesses on
+the file /home/wildfly/add_users/log/ca.log. For complete SELinux messages run: sealert -l 2765441a-7b2b-4a73-
+bb36-ccf313acd6e1
+Apr 17 00:01:03 igcarca python: SELinux is preventing /usr/sbin/logrotate from &#39;read, write&#39; accesses on the file
+/home/wildfly/add_users/log/ca.log.
+#012#012***** Plugin catchall (100. confidence) suggests **************************#012#012If you
+believe that logrotate should be allowed read write access on the ca.log file by default.#012Then you should
+report this as a bug.#012You can generate a local policy module to allow this access.#01
+2Do#012allow this access for now by executing:#012# ausearch -c &#39;logrotate&#39; --raw | audit2allow -M my-
+logrotate#012# semodule -i my-logrotate.pp#012
+Apr 17 00:01:03 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from &#39;read, write&#39; accesses on
+the file /home/wildfly/add_users/log/ca.log. For complete SELinux messages run: sealert -l 2765441a-7b2b-4a73-
+bb36-ccf313acd6e1
+Apr 17 00:01:03 igcarca python: SELinux is preventing /usr/sbin/logrotate from &#39;read, write&#39; accesses on the file
+/home/wildfly/add_users/log/ca.log.
+#012#012***** Plugin catchall (100. confidence) suggests **************************#012#012If you
+believe that logrotate should be allowed read write access on the ca.log file by default.#012Then you should
+report this as a bug.#012You can generate a local policy module to allow this access.#01
+2Do#012allow this access for now by executing:#012# ausearch -c &#39;logrotate&#39; --raw | audit2allow -M my-
+logrotate#012# semodule -i my-logrotate.pp#012
+Apr 17 00:01:04 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from write access on the
+directory /home/wildfly/add_users/log/ca.log. For complete SELinux messages run: sealert -l 74bc8185-b967-
+41bd-8837-96c4522c7901
+
+Apr 17 00:01:04 igcarca python: SELinux is preventing /usr/sbin/logrotate from write access on the directory
+/home/wildfly/add_users/log/ca.log.#012#012***** Plugin catchall (100. confidence) suggests
+**************************#012#012If you believe that logrotate should be allowed write access
+on the ca.log directory by default.#012Then you should report this as a bug.#012You can generate a local policy
+module to allow this access.#012Do#012allow this access for now by executing:#012# ausearch -c &#39;logrotate&#39; --
+raw | audit2allow -M my-logrotate#012# semodule -i my-logrotate.pp#012
+Apr 17 00:01:04 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from write access on the
+directory /home/wildfly/add_users/log/ca.log. For complete SELinux messages run: sealert -l 74bc8185-b967-
+41bd-8837-96c4522c7901
+Apr 17 00:01:04 igcarca python: SELinux is preventing /usr/sbin/logrotate from write access on the directory
+/home/wildfly/add_users/log/ca.log.#012#012***** Plugin catchall (100. confidence) suggests
+**************************#012#012If you believe that logrotate should be allowed write access
+on the ca.log directory by default.#012Then you should report this as a bug.#012You can generate a local policy
+module to allow this access.#012Do#012allow this access for now by executing:#012# ausearch -c &#39;logrotate&#39; --
+raw | audit2allow -M my-logrotate#012# semodule -i my-logrotate.pp#012
+Apr 17 00:01:04 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from write access on the
+directory /home/wildfly/add_users/log/ca.log. For complete SELinux messages run: sealert -l 74bc8185-b967-
+41bd-8837-96c4522c7901
+Apr 17 00:01:04 igcarca python: SELinux is preventing /usr/sbin/logrotate from write access on the directory
+/home/wildfly/add_users/log/ca.log.#012#012***** Plugin catchall (100. confidence) suggests
+**************************#012#012If you believe that logrotate should be allowed write access
+on the ca.log directory by default.#012Then you should report this as a bug.#012You can generate a local policy
+module to allow this access.#012Do#012allow this access for now by executing:#012# ausearch -c &#39;logrotate&#39; --
+raw | audit2allow -M my-logrotate#012# semodule -i my-logrotate.pp#012
+Apr 17 00:01:04 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from write access on the
+directory /home/wildfly/add_users/log/ca.log. For complete SELinux messages run: sealert -l 74bc8185-b967-
+41bd-8837-96c4522c7901
+Apr 17 00:01:04 igcarca python: SELinux is preventing /usr/sbin/logrotate from write access on the directory
+/home/wildfly/add_users/log/ca.log.#012#012***** Plugin catchall (100. confidence) suggests
+**************************#012#012If you believe that logrotate should be allowed write access
+on the ca.log directory by default.#012Then you should report this as a bug.#012You can generate a local policy
+module to allow this access.#012Do#012allow this access for now by executing:#012# ausearch -c &#39;logrotate&#39; --
+raw | audit2allow -M my-logrotate#012# semodule -i my-logrotate.pp#012
+Apr 17 00:01:04 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from write access on the
+directory /home/wildfly/add_users/log/ca.log. For complete SELinux messages run: sealert -l 74bc8185-b967-
+41bd-8837-96c4522c7901
+Apr 17 00:01:04 igcarca python: SELinux is preventing /usr/sbin/logrotate from write access on the directory
+/home/wildfly/add_users/log/ca.log.#012#012***** Plugin catchall (100. confidence) suggests
+**************************#012#012If you believe that logrotate should be allowed write access on the
+ca.log directory by default.#012Then you should report this as a bug.#012You can generate a local policy module
+to allow this access.#012Do#012allow this access for now by executing:#012# ausearch -c &#39;logrotate&#39; --raw |
+audit2allow -M my-logrotate#012# semodule -i my-logrotate.pp#012
+Apr 17 00:01:04 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from create access on the file
+/home/wildfly/add_users/log/ca.log.
+
+For complete SELinux messages run: sealert -l 0335c7d3-cb7d-4226-93cc-2b6864666c64
+Apr 17 00:01:04 igcarca python: SELinux is preventing /usr/sbin/logrotate from create access on the file
+/home/wildfly/add_users/log/ca.log.#012#012*
+**** Plugin catchall (100. confidence) suggests **************************#012#012If you believe that
+logrotate should be allowed create access on the ca.log file by default.#012Then you should report this as a
+bug.#012You can generate a local policy module to allow this access.#012Do#012allow
+this access for now by executing:#012# ausearch -c &#39;logrotate&#39; --raw | audit2allow -M my-logrotate#012#
+semodule -i my-logrotate.pp#012
+Apr 17 00:01:04 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from setattr access on the file
+labeled user_home_t. For complete SELinux messages run: sealert -l aa153b06-bb3d-4684-bee8-b87c6e184c1e
+Apr 17 00:01:04 igcarca python: SELinux is preventing /usr/sbin/logrotate from setattr access on the file labeled
+user_home_t.#012#012***** Plugin catchall (100. confidence) suggests
+**************************#012#012If you believe that logrotate should be allowed setattr access on the
+(null) file by default.#012Then you should report this as a bug.#012You can generate a local policy module to
+allow this access.#012Do#012allow this access for now by executing:#012# ausearch -c &#39;logrotate&#39; --raw |
+audit2allow -M my-logrotate#012# semodule -i my-logrotate.pp#012
+Apr 17 00:01:04 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from unlink access on the file
+/home/wildfly/add_users/log/ca.log-2
+0220116. For complete SELinux messages run: sealert -l 02451d26-7e8f-4280-9bbd-c88216351ce5
+Apr 17 00:10:01 igcarca systemd: Created slice User Slice of root.
+Apr 17 00:10:01 igcarca systemd: Starting User Slice of root.
+Apr 17 00:10:01 igcarca systemd: Started Session 16012 of user root.
+Apr 17 00:10:01 igcarca systemd: Starting Session 16012 of user root.
+Apr 17 00:10:01 igcarca systemd: Removed slice User Slice of root.
+Apr 17 00:10:01 igcarca systemd: Stopping User Slice of root.
+Apr 17 00:20:01 igcarca systemd: Created slice User Slice of root.
+Apr 17 00:20:01 igcarca systemd: Starting User Slice of root.
+Apr 17 00:20:01 igcarca systemd: Started Session 16013 of user root.
+Apr 17 00:20:01 igcarca systemd: Starting Session 16013 of user root.
+Apr 17 00:20:01 igcarca systemd: Removed slice User Slice of root.
+Apr 17 00:20:01 igcarca systemd: Stopping User Slice of root.
+Apr 17 03:01:01 igcarca dbus[1022]: [system] Activating service name=&#39;org.fedoraproject.Setroubleshootd&#39; (using
+servicehelper)
+Apr 17 03:01:01 igcarca dbus[1022]: [system] Successfully activated service &#39;org.fedoraproject.Setroubleshootd&#39;
+Apr 17 03:01:02 igcarca setroubleshoot: failed to retrieve rpm info for /var/lib/mysql/igcarca.log
+Apr 17 03:01:02 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from getattr access on the file
+/var/lib/mysql/igcarca.log. For complete SELinux messages run: sealert -l 983eac16-7b08-4612-aabe-
+e320ab2f7aeb
+Apr 17 03:01:02 igcarca python: SELinux is preventing /usr/sbin/logrotate from getattr access on the file
+/var/lib/mysql/igcarca.log.#012#012***** Plugin catchall (100. confidence) suggests
+**************************#012#012If you believe that logrotate should be allowed getattr access on the i
+gcarca.log file by default.#012Then you should report this as a bug.#012You can generate a local policy module to
+allow this access.#012Do#012allow this access for now by executing:#012# ausearch -c &#39;logrotate&#39; --raw |
+audit2allow -M my-logrotate#012# semodule -i my-logrotate.pp#012
+
+Apr 17 03:01:05 igcarca setroubleshoot: SELinux is preventing /usr/sbin/logrotate from getattr access on the file
+/var/ossec/logs/ossec.log. For complete SELinux messages run: sealert -l e71aa98f-5ac3-4b2e-a35c-
+be6adcf25750
+Apr 17 03:01:05 igcarca python: SELinux is preventing /usr/sbin/logrotate from getattr access on the file
+/var/ossec/logs/ossec.log.#012#012***** Plugin catchall_labels (83.8 confidence) suggests
+*******************#012#012If you want to allow logrotate to have getattr access on the ossec.log f
+ile#012Then you need to change the label on /var/ossec/logs/ossec.log#012Do#012# semanage fcontext -a -t
+FILE_TYPE &#39;/var/ossec/logs/ossec.log&#39;#012where FILE_TYPE is one of the following: NetworkManager_exec_t,
+NetworkManager_initrc_exec_t, NetworkManager_log_t, NetworkManager_tmp_t, NetworkManager
+_unit_file_t, NetworkManager_var_run_t, abrt_dump_oops_exec_t, abrt_exec_t, abrt_handle_event_exec_t,
+abrt_helper_exec_t, abrt_initrc_exec_t, abrt_retrace_coredump_exec_t, abrt_retrace_worker_exec_t,
+abrt_tmp_t, abrt_unit_file_t, abrt_upload_watch_exec_t, abrt_upload_watch_tmp_t, abrt_var_cache_t,
+abrt_var_log_t, abrt_var_run_t, abrt_watch_log_exec_t, accountsd_exec_t, accountsd_unit_file_t, acct_data_t,
+acct_exec_t, acct_initrc_exec_t, admin_crontab_tmp_t, admin_passwd_exec_t, afs_bosserver_exec_t,
+afs_exec_t, afs_fsserver_exec_t, afs_initrc_exec_t, afs_kaserver_exec_t, afs_logfile_t, afs
+_ptserver_exec_t, afs_vlserver_exec_t, aiccu_exec_t, aiccu_initrc_exec_t, aiccu_var_run_t, aide_exec_t,
+aide_log_t, ajaxterm_exec_t, ajaxterm_initrc_exec_t, ajaxterm_var_run_t, alsa_exec_t, alsa_tmp_t,
+alsa_unit_file_t, alsa_var_run_t, amanda_exec_t, amanda_inetd_exec_t, amanda_log_t, amanda_recov
+er_exec_t, amanda_tmp_t, amanda_unit_file_t, amtu_exec_t, amtu_initrc_exec_t, anaconda_exec_t,
+anacron_exec_t, anon_inodefs_t, antivirus_exec_t, antivirus_initrc_exec_t, antivirus_log_t, antivirus_tmp_t,
+antivirus_unit_file_t, antivirus_var_run_t, apcupsd_cgi_script_exec_t, apcupsd_exec_t, apcupsd
+_initrc_exec_t, apcupsd_log_t, apcupsd_tmp_t, apcupsd_unit_file_t, apcupsd_var_run_t, apm_exec_t,
+apmd_exec_t, apmd_initrc_exec_t, apmd_log_t, apmd_tmp_t, apmd_unit_file_t, apmd_var_run_t,
+arpwatch_exec_t, arpwatch_initrc_exec_t, arpwatch_tmp_t, arpwatch_unit_file_t, arpwatch_var_run_t,
+asterisk_exec_t, asterisk_initrc_exec_t, asterisk_log_t, asterisk_tmp_t, asterisk_var_run_t, audisp_exec_t,
+audisp_remote_exec_t, audisp_var_run_t, auditadm_sudo_tmp_t, auditctl_exec_t, auditd_exec_t,
+auditd_initrc_exec_t, auditd_log_t, auditd_unit_file_t, auditd_var_run_t, auth_cache_t, authconfig_exec_t,
+automount_exec_t, automount_initrc_exec_t, automount_tmp_t, automount_unit_file_t, automount_var_run_t,
+avahi_exec_t, avahi_initrc_exec_t, avahi_unit_file_t, avahi_var_run_t, awstats_exec_t, awstats_script_exec_t,
+awstats_tmp_t, bacula_admin_exec_t, bacula_exec_t, bacula_initrc_exec_t, bacula_log_t, bacula_tmp_t,
+bacula_unconfined_script_exec_t, bacula_var_run_t, bcfg2_exec_t, bcfg2_initrc_exec_t, bcfg2_unit_file_t,
+bcfg2_var_run_t, bin_t, bitlbee_exec_t, bitlbee_initrc_exec_t, bitlbee_log_t, bitlbee_tmp_t, bitlbee_var_run_t,
+blkmapd_exec_t, blkmapd_initrc_exec_t, blkmapd_var_run_t, blktap_exec_t, blktap_var_run_t,
+blueman_exec_t, blueman_var_run_t, bluetooth_exec_t, bluetooth_helper_exec_t, bluetooth_helper_tmp_t,
+bluetooth_helper_tmpfs_t, bluetooth_initrc_exec_t, bluetooth_tmp_t, bluetooth_unit_file_t,
+bluetooth_var_run_t, boinc_exec_t, boinc_initrc_exec_t, boinc_log_t, boinc_project_tmp_t, boinc_tmp_t,
+boinc_unit_file_t, boot_t, bootloader_exec_t, bootloader_tmp_t, bootloader_var_run_t, brctl_exec_t,
+brltty_exec_t, brltty_log_t, brltty_unit_file_t, brltty_var_run_t, bugzilla_script_exec_t, bugzilla_tmp_t,
+bumblebee_exec_t, bumblebee_unit_file_t, bumblebee_var_run_t, cachefilesd_exec_t, cachefilesd_var_run_t,
+calamaris_exec_t, calamaris_log_t, callweaver_exec_t, callweaver_initrc_exec_t, callweaver_log_t, callweaver_v
+ar_run_t, canna_exec_t, canna_initrc_exec_t, canna_log_t, canna_var_run_t, cardctl_exec_t, cardmgr_dev_t,
+cardmgr_exec_t, cardmgr_var_run_t, ccs_exec_t, ccs_initrc_exec_t, ccs_tmp_t, ccs_var_lib_t, ccs_var_log_t,
+ccs_var_run_t, cdcc_exec_t, cdcc_tmp_t, cdrecord_exec_t, cert_t, certmaster_exec_t, certmaster_initrc_exec_t,
+certmaster_var_log_t, certmaster_var_run_t, certmonger_exec_t, certmonger_initrc_exec_t,
+
+certmonger_unconfined_exec_t, certmonger_unit_file_t, certmonger_var_run_t, certwatch_exec_t,
+cfengine_execd_exec_t, cfengine_initrc_exec_t, cfengine_log_t, cfengine_monitord_exec_t, c
+fengine_serverd_exec_t, cgclear_exec_t, cgconfig_exec_t, cgconfig_initrc_exec_t, cgdcbxd_exec_t,
+cgdcbxd_unit_file_t, cgdcbxd_var_run_t, cgred_exec_t, cgred_initrc_exec_t, cgred_log_t, cgred_var_run_t,
+cgroup_t, checkpc_exec_t, checkpc_log_t, checkpolicy_exec_t, chfn_exec_t, chkpwd_exec_t, chrome_
+sandbox_exec_t, chrome_sandbox_nacl_exec_t, chrome_sandbox_tmp_t, chronyc_exec_t, chronyd_exec_t,
+chronyd_initrc_exec_t, chronyd_keys_t, chronyd_unit_file_t, chronyd_var_log_t, chronyd_var_run_t,
+chroot_exec_t, cifs_t, cinder_api_exec_t, cinder_api_tmp_t, cinder_api_unit_file_t, cinder_backup_exec
+_t, cinder_backup_tmp_t, cinder_backup_unit_file_t, cinder_log_t, cinder_scheduler_exec_t,
+cinder_scheduler_tmp_t, cinder_scheduler_unit_file_t, cinder_var_run_t, cinder_volume_exec_t,
+cinder_volume_tmp_t, cinder_volume_unit_file_t, ciped_exec_t, ciped_initrc_exec_t, clogd_exec_t,
+clogd_var_run_t, cloud_init_exec_t, cloud_init_tmp_t, cloud_init_unit_file_t, cloud_log_t, cluster_exec_t,
+cluster_initrc_exec_t, cluster_tmp_t, cluster_unit_file_t, cluster_var_log_t, cluster_var_run_t, clvmd_exec_t,
+clvmd_initrc_exec_t, clvmd_var_run_t, cmirrord_exec_t, cmirrord_initrc_exec_t, cmirrord_var_run_
+t, cobbler_tmp_t, cobbler_var_log_t, cobblerd_exec_t, cobblerd_initrc_exec_t, cockpit_session_exec_t,
+cockpit_tmp_t, cockpit_unit_file_t, cockpit_var_run_t, cockpit_ws_exec_t, collectd_exec_t,
+collectd_initrc_exec_t, collectd_script_exec_t, collectd_script_tmp_t, collectd_unit_file_t, collectd_var
+_run_t, colord_exec_t, colord_tmp_t, colord_unit_file_t, comsat_exec_t, comsat_tmp_t, comsat_var_run_t,
+condor_collector_exec_t, condor_initrc_exec_t, condor_log_t, condor_master_exec_t, condor_master_tmp_t,
+condor_negotiator_exec_t, condor_procd_exec_t, condor_schedd_exec_t, condor_schedd_tmp_t,
+condor_startd_exec_t, condor_startd_tmp_t, condor_unit_file_t, condor_var_run_t, conman_exec_t,
+conman_log_t, conman_tmp_t, conman_unconfined_script_exec_t, conman_unit_file_t, conman_var_run_t,
+consolehelper_exec_t, consolekit_exec_t, consolekit_log_t, consolekit_unit_file_t, consolekit_var_run_t
+, container_auth_exec_t, container_log_t, container_plugin_var_run_t, container_runtime_exec_t,
+container_runtime_tmp_t, container_unit_file_t, container_var_run_t, couchdb_exec_t, couchdb_initrc_exec_t,
+couchdb_log_t, couchdb_tmp_t, couchdb_unit_file_t, couchdb_var_run_t, courier_authdaemon_exec_
+t, courier_exec_t, courier_pcp_exec_t, courier_pop_exec_t, courier_sqwebmail_exec_t, courier_tcpd_exec_t,
+courier_var_run_t, cpu_online_t, cpucontrol_exec_t, cpufreqselector_exec_t, cpuplug_exec_t,
+cpuplug_initrc_exec_t, cpuplug_var_run_t, cpuspeed_exec_t, cpuspeed_var_run_t, crack_exec_t, crack_t
+mp_t, cron_log_t, cron_var_run_t, crond_exec_t, crond_initrc_exec_t, crond_tmp_t, crond_unit_file_t,
+crond_var_run_t, crontab_exec_t, crontab_tmp_t,ctdbd_exec_t, ctdbd_initrc_exec_t, ctdbd_log_t, ctdbd_tmp_t,
+ctdbd_var_run_t, cups_pdf_exec_t, cups_pdf_tmp_t, cupsd_config_exec_t, cupsd_config_var_
+run_t, cupsd_exec_t, cupsd_initrc_exec_t, cupsd_log_t, cupsd_lpd_exec_t, cupsd_lpd_tmp_t,
+cupsd_lpd_var_run_t, cupsd_tmp_t, cupsd_unit_file_t, cupsd_var_run_t, cvs_exec_t, cvs_initrc_exec_t,
+cvs_script_exec_t, cvs_tmp_t, cvs_var_run_t, cyphesis_exec_t, cyphesis_initrc_exec_t, cyphesis_log_t, cyphe
+sis_tmp_t, cyphesis_var_run_t, cyrus_exec_t, cyrus_initrc_exec_t, cyrus_tmp_t, cyrus_var_run_t,
+dbadm_sudo_tmp_t, dbskkd_exec_t, dbskkd_tmp_t, dbskkd_var_run_t, dbusd_etc_t, dbusd_exec_t,
+dcc_client_exec_t, dcc_client_tmp_t, dcc_dbclean_exec_t, dcc_dbclean_tmp_t, dcc_var_run_t, dccd_exec_t,
+dccd_tmp_t, dccd_var_run_t, dccifd_exec_t, dccifd_tmp_t, dccifd_var_run_t, dccm_exec_t, dccm_tmp_t,
+dccm_var_run_t, dcerpcd_exec_t, dcerpcd_var_run_t, ddclient_exec_t, ddclient_initrc_exec_t, ddclient_log_t,
+ddclient_tmp_t, ddclient_v
